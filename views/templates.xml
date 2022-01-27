@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+         <template id="index">
+             <t t-call="website.layout">
+                 <t t-set="title" t-value="Index"/>
+                 <div class="oe_structure">
+                      <t t-foreach="Vehicles" t-as="Vehicle">
+                          <t t-esc="Vehicle"/>
+                      </t>
+                 </div>
+             </t>
+         </template>
+    </data>
+</odoo>
